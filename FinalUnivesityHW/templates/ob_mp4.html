@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A16專題_mp4辨識</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>    
+    <body>
+
+
+<!--navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./home.html">A16專題</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./home.html">首頁</a></li>
+                    <li><a href="./introduce_dataset.html">資料集介紹</a></li>
+                    <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">技術辨識
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                                <li><a href="./ob_image.html">圖像辨識</a></li>
+                                <li><a href="./ob_mp4.html">影像辨識</a></li>
+                                <!--<li><a href="/ob_realtime.html">網路cam辨識</a></li>-->
+                          </ul>
+                    </li>
+                </ul>
+                  <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search" name="search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+            </div>
+        </nav>
+
+
+<h1 align="center" style="font-size:72px;">傳入mp4檔</h1>
+
+
+
+
+
+  <!--BS table-->
+  <div class="container">
+    <table class="table">
+        <thead>
+          <tr><th/><th/></tr>
+          <tr>
+            <th>
+                <form action="/ob_mp42.html" method="POST" enctype = "multipart/form-data" n\>
+                    <input type="file" name="file" style="float:left"/>
+                    <input type="submit" class="btn btn-success" style="float:left"/>
+                  </form>
+            </th>
+            <th>
+         </th>
+          </tr>
+          <tr><th><br/></th><th/></tr>
+          <tr><th><br/></th><th/></tr>
+
+        </thead>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>A16專題_數據集介紹</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>    
+    <body>
+
+
+<!--navbar-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./home.html">A16專題</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="./home.html">首頁</a></li>
+            <li><a href="./introduce_dataset.html">資料集介紹</a></li>
+            <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">技術辨識
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                        <li><a href="./ob_image.html">圖像辨識</a></li>
+                        <li><a href="./ob_mp4.html">影像辨識</a></li>
+                        <!--<li><a href="/ob_realtime.html">網路cam辨識</a></li>-->
+                  </ul>
+            </li>
+        </ul>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./signinup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="./signout.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+    </div>
+</nav>
+
+
+<!--BS image-->
+        <div class="container">
+            <h2>6個類別的數據集</h2>
+            <p>對於各個類別的圖片進行介紹</p>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/TL1.jpg" target="_blank">
+                    <img src="../runs/detect/TL1.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                      <p>A菜(TaiwaneseLettuce):</p>
+                      <p>本島萵苣，又稱臺灣萵苣、臺灣萵菜，臺語俗稱鴨菜、萵菜或萵仔菜，或寫作A菜， 一年或二年生草本，
+                        為臺灣常見蔬菜，葉味略苦；株心清甜爽脆，在台灣稱「菜心」。屬於不結球萵苣的品種之一。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/FL1.jpg" target="_blank">
+                    <img src="../runs/detect/FL1.jpg" alt="Nature" style="width:100%">
+                    <div class="caption">
+                      <p>大陸妹(FushanLettuce(ChinaGirl))</p>
+                      <p>大陸妹（在香港或稱：北姑），通常出現在臺灣、香港、澳門三地人士部分生活場景的口語中，
+                        用於稱呼從中國大陸到此三地工作、生活的年輕女性。在台灣也把一種青菜福山萵苣稱為大陸妹。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/GC1.jpg" target="_blank">
+                    <img src="../runs/detect/GC1.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                      <p>山茼蒿(GarlandChrysanthemum)</p>
+                      <p>茼蒿（學名：Glebionis coronaria），別名茼萵、春菊、艾菜、打某菜、皇帝菜，菊科茼蒿屬，原產於地中海沿岸，
+                        在歐洲是庭園中的觀賞花卉植物，宋朝時引進中國後成為蔬食食用。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/SPL1.jpg" target="_blank">
+                    <img src="../runs/detect/SPL1.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                      <p>地瓜葉(SweetPotatoLeaves)</p>
+                      <p>番薯葉或稱地瓜葉、甘藷葉，是旋花科番薯屬植物番薯的葉，可作為蔬菜食用。早年種植番薯的農民為求物盡其用，割下番薯葉後多半將它煮熟。
+                        亦有農民只摘取嫩葉部分炒熟吃，或加入蒜末，再加一些食鹽食用。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/CS1.jpg" target="_blank">
+                    <img src="../runs/detect/CS1.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                      <p>皇宮菜(CeylonSpinach)</p>
+                      <p>落葵，是落葵科落葵屬的一年生藤蔓植物，其種加詞「alba」意為「白色的」。是一種可供食用的蔬菜。
+                        《本草綱目》記載：「落葵三月種之，嫩苗可食。五月蔓延，其葉似杏葉而肥厚軟滑，作蔬和肉皆宜。」傳說為泰國皇宮指定為御用的菜餚，因此亦稱皇宮菜。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="../runs/detect/CL1.jpg" target="_blank">
+                    <img src="../runs/detect/CL1.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                      <p>龍鬚菜(ChayoteLeaves)</p>
+                      <p>佛手瓜（學名：Asparagus officinalis）的藤尖，台灣常食用之綠色龍鬚菜，通常是指此作物的嫩莖部分。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A16專題</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!--navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="C:\FinalUnivesityHW\templates\Home.html">A16專題</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="C:\FinalUnivesityHW\templates\Home.html">首頁</a></li>
+      <li><a href="introduce_dataset.html">資料集介紹</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/">技術辨識
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="./ob_image.html">圖像辨識</a></li>
+          <li><a href="./ob_mp4.html">影像辨識</a></li>
+          <!--<li><a href="/ob_realtime.html">網路cam辨識</a></li>-->
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="./signinup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="./signout.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+    <div class="jumbotron">
+      <h1>蔬菜紋理影像辨識系統</h1>
+      <p>目的是藉由對單一任務目標，提取骨幹，以提高辨識率。</p>
+    </div>
+    <img src="C:\FinalUnivesityHW\runs\detect\FL1.jpg" class="img-rounded" alt="sidelineImage" style="width:20%;border: 2px solid gray;float:left">
+    <h2 style="margin-left:250px"> 大陸妹(FL):</h2><hr style="margin-left:250px"></hr>
+    <h4 style="margin-left:250px"> 使用程式進行圖片處理，處理後再上傳至roboflow。期間沒有使用任何roboflow內建的預處理。單純方便引入yolo格式與切割數據集。</h4>
+    <br/><br/><br/><br/><br/><br/>
+    <img src="C:\FinalUnivesityHW\runs\detect\GC1.jpg" class="img-rounded" alt="sidelineImage" style="width:20%;border: 2px solid gray;float:left">
+    <h2 style="margin-left:250px"> 山茼蒿(GC):</h2><hr style="margin-left:250px"></hr>
+    <h4 style="margin-left:250px"> 呈上。</h4>
+    <br/><br/><br/><br/><br/><br/>   
+    <img src="C:\FinalUnivesityHW\runs\detect\原圖_130.jpg" class="img-rounded" alt="sidelineImage" style="width:20%;border: 2px solid gray;float:right;">
+    <h2> 添加邊線圖的模型辨識結果:</h2><hr style="margin-right:250px"></hr>
+    <h4> 由於對單一目標圖片的辨識率已經不錯了，因此改成用多目標圖片來推論。6個類別(7個其一為重複類別)有5個正確。</h4>
+    <br/><br/><br/><br/><br/><br/>   
+    <img src="C:\FinalUnivesityHW\runs\detect\原圖_100.jpg" class="img-rounded" alt="sidelineImage" style="width:20%;border: 2px solid gray;float:right;">
+    <h2> 純yolo深度模型辨識結果:</h2><hr style="margin-right:250px"></hr>
+    <h4> 比上面那個少了30個epoch跟重點式對自己的遷移學習</h4>
+  </div>
+
+</body>
+</html>
