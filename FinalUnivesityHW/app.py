@@ -63,7 +63,7 @@ def ob_mp4(file):
 
 ###########正式開始!!!###########
 import pymongo
-client=pymongo.MongoClient("mongodb+srv://david4366938789:j6u.j6xm4@cluster0.rude3cw.mongodb.net/?retryWrites=true&w=majority")
+client=pymongo.MongoClient("mongodb+srv://{}:{}@cluster0.rude3cw.mongodb.net/?retryWrites=true&w=majority")
 db=client.member_system
 import moviepy.editor as moviepy
 #import ffmpeg
